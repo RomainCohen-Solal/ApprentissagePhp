@@ -17,6 +17,7 @@
 
     <h1>Les exercices</h1>
     <h2>les exercices en php</h2>
+    <a href="https://github.com/RomainCohen-Solal/ApprentissagePhp" target="_blank">Lien repository github</a>
     <ol>
       <li>premier exo</li>
     </ol>

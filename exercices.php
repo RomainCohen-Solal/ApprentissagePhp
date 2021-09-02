@@ -21,6 +21,7 @@
     <ol>
       <li>premier exercice: si vous voyez ce site, c'est que c'est fait</li>
       <li><a href="/exercice 2.php"> exercice 2</a>: décoder des chaînes de caractère</li>
+      <li><a href="/exercice 3.php"> exercice 3</a>: travailler avec des tableaux</li>
     </ol>
   </div>
   <script src="/js/bootstrap.bundle.min.js"></script>

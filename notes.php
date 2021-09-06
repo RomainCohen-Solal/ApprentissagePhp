@@ -154,11 +154,92 @@ var_dump($valueTotreat);
   ?>
  affichage d'une donnée précise: <?php echo $tab['tab2']['tab2Key3']['keyMachin']; ?>
 
+<?php
+
+// si [] ou "" ou 0 ou false ou null
+$a = 1;
+$b = "1";
+
+// comparateurs
+/*
+* ==
+* ===
+*!=
+*<=
+*>=
+*
+*/
+if ( $a === $b ){
+  echo "la valeur de \$a est de : $a <br>";
+  echo "la valeur de \$b est de : $b <br>";
+}
+?>
+<?php
+
+// $name = "Cohen-Solal";
+// $role = "admin";
+
+// if ($name == "Cohen-Solal"){
+//   echo "Bonjour Mr $name, bienvenu sur ton site <br>";
+// } elseif ($role =="admin") {"Bonjour Mr l'administrateur, bienvenu sur ton site <br>";
+// }
+// else{
+//   echo "Bonjour à vous, bienvenu sur ce site <br>";
+// }
+
+?>
+<h3>Affichage conditionnel</h3>
+<?php
+if ($role == "admin"):
+?>
+<p>Bonjour Mr l'administrateur, bienvenu sur ton site tu es bien connectté</p>
+<?php
+else :
+?>
+<p>Bonjour à vous, bienvenu sur ce site<br>
+vous n'avez aucun pouvoir
+</p>
+<?php endif ?>
+
+<?php
+
+$colors = ["bleu", "vert", "rouge", "marron", "orange", "jaune", "blanc", "noir", "violet", "turquoise"];
+
+$colors[] = "rose";
+
+// echo "<ul>";
+// for ($i = 0; $i < count($colors); $i++){
+// echo'<li>couleur 1: ' . $i + 1 . ': ' . $colors [$i] . ' <li>';
+// }
+// echo "</ul>";
+
+// echo "**************<br>";
+
+// for ($i = 0; $i < 10; $i++){
+//   echo "valeur de \$i: $i <br>";
+// }
+
+?>
+<ul>
+  <?php for ($i = 0; $i < count ($colors); $i++) : ?>
+    <li>couleur <?php echo $i +1; ?>: <?php echo $colors[$i]; ?></li>
+    <?php endfor ?>
+</ul>
+
+<?php
+$colors = ["bleu", "vert", "rouge", "marron", "orange", "jaune", "blanc", "noir", "violet", "turquoise"];
+for ($i = 0; $i < count($colors); $i++) {
+  $colorsTab["couleur $i"] = $colors [$i];
+}
+
+echo "<ul>";
+foreach ($colors as $color => $value){
+  echo "$color : $value<br>";
+}
+echo"</ul>"; 
 
 
-
-
-
+?>
 </pre>    
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>

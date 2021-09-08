@@ -238,8 +238,71 @@ foreach ($colors as $color => $value){
 }
 echo"</ul>"; 
 
+// boucle while attention aux boucles infinis
+$continue = true;
+$i = 0;
+$counteur = 10000;
+while ($continue) {
+  echo "<li>ligne numéro: $i</li>";
+  $i++;
+  if($i > 10){
+    $continue = false;
+  }
+
+  if ($counteur){
+    $continue = false;
+  }
+  $counteur--;
+}
+
+do{
+  echo "<li>ligne numéro: $i</li>";
+  $i--;
+} while ($i >= 0);
+
+// i--
+// $i = $i -1;
+
+// for($j = 0; $j < 100; $j++)
+
+$pays = "France";
+
+switch($state){
+  case"Suisse" :
+  case"France": 
+    echo "it's so go";
+    $language = "le français";
+    break;
+  case "Angleterre":
+    case "Amérique" :
+    $language="l'anglais";
+    break;
+    default :
+    $language = "sans doute anglais, what else possible?";
+    }
+echo "nom du pays : $state, on y parle $language";
 
 ?>
+
+<?php 
+
+if (!empty($_GET)){
+  if (isset($_GET["name"])){
+    $name = strip_tags($_GET["question"]);
+
+  }
+}
+
+?>
+
+<form method="get">
+  <div class="mb-3">
+    <label for="name" class="form-label">votre nom:</label>
+    <input type="text" name="name" id="question">
+  </div>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+
 </pre>    
     </div>
     <script src="/js/bootstrap.bundle.min.js"></script>

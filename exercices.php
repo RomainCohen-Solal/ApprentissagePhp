@@ -24,6 +24,8 @@
       <li><a href="/exercice 3.php"> exercice 3</a>: travailler avec des tableaux</li>
       <li><a href="/exercice 4.php"> exercice 4</a>: travailler avec des boucles</li>
       <li><a href="/exercice 5.php"> exercice 5</a>: système d'encodage et de décodage de vigenère</li>
+      <li><a href="/exercice 6.php"> exercice 6</a>: mise en oeuvre de la boucle while</li>
+      <li><a href="/exercice 7.php"> exercice 7</a>: programme de codage et décodage suivant divers protocole de cryptage</li>
     </ol>
   </div>
   <script src="/js/bootstrap.bundle.min.js"></script>

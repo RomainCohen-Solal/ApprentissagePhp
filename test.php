@@ -1,3 +1,6 @@
+<?php
+require("./script/cryptage.php")
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -20,6 +23,9 @@
 résultats php
 ========================
 <?php
+
+$message = maFonction();
+echo $message;
 
 ?>
 </pre>

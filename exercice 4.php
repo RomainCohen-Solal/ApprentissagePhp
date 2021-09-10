@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <title>Page d'exercices</title>
+  <title>Exercice 4</title>
 </head>
 
 <body>

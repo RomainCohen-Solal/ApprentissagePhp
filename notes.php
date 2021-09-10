@@ -293,6 +293,37 @@ if (!empty($_GET)){
   }
 }
 
+function maFonction(){
+  echo "coucou, je viens de la fonction maFonction";
+}
+
+function addition (int $a, int $b): int
+{
+  $c = $a + $b;
+  return $c;
+}
+echo "je suis le programme principale<br>";
+maFonction();
+echo"<br>";
+
+$nombre1 = 10;
+$nombre2 = 13;
+
+$result = addition($nombre1, $nombre2);
+
+echo "le résultat du calcul $nombre1 + $nombre2 = $result<br>";
+define("NOMBRE3", 3);
+
+$nbr1 = 10;
+$nbr2 = 13;
+
+function addition2 (int $nbr1, int $nbr2): int
+{
+  return 30 + 40 + NOMBRE3;
+}
+echo "je suis la valeur de nbr1: $nbr1<br>";
+$resultat = addition2($nbr1, $nbr2);
+echo "le résultat du calcul est $nbr1 + $nbr2 = $resultat<br>";
 ?>
 
 <form method="get">
